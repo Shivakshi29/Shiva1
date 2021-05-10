@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Only Navigation Menu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			font:normal 100% Tahoma, sans-serif;
+		}
+		nav input[type=checkbox]{
+    		display: none;
+		}
+		nav ul { 
+		list-style:none;
+		margin:0;
+		padding:0;
+		display:none;
+	}
+	nav label {
+		display:block;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		text-decoration: none;
+		color: #fff;
+		background: #19c589;
+		text-align: center;
+		padding: 10px 0;
+		cursor:pointer;
+	}
+	nav input[type=checkbox]:checked + ul{
+    	display: block;
+	}
+	nav ul li a {
+		width: 100%;
+		display:block;
+		text-align: center;
+	    line-height: 50px;
+	    font-family: Arial, sans-serif;
+	    color: #fff;
+	    background-color: #666;
+	    text-decoration: none;
+	}
+	nav ul li {
+		margin-bottom: 1px;
+	}
+	#menu a:hover, #menu a.current {
+		background: #19c589;
+	}
+	@media screen and (min-width : 768px){
+        nav label {
+			display:none;
+	    }
+	
+	    nav ul {
+		    display:block;
+		    float:right;
+	    }
+		nav ul li {
+			float: left;
+			margin-right: 1px;
+			margin-bottom:0;
+		}
+		nav ul li a {
+			width: 140px;
+		}
+  	}
+	
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+<nav aria-label="Main menu">
+<label for="show-menu">Show  Menu</label>
+<input type="checkbox" id="show-menu" >
+	<ul id="menu" role="menubar">
+		<li><a class="current" href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Portfolio</a></li>
+		<li><a href="#">News</a></li>
+		<li><a href="#">Contact</a></li>
+		
+	</ul>
+</nav>
+</body>
+</html>

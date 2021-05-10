@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Two - columns module with nested floats</title>
+	<style>
+		/*** this styles for visual presentation of the structure elements: section, aside, and article ***/
+		section.rightcol {
+			background-color:rgba(239,255,240,0.5)
+		}
+		section.rightcol > h1 {
+			text-align:center;
+		}
+		section.rightcol article {
+			background-color:rgba(255,245,214,0.5)
+		}
+		aside.side-content {
+			background-color: rgba(226,239,255,1.00)
+		}
+		h1, h2 {
+			text-align:center
+		}
+		#nextelement {clear:both;}
+		/*** styles to structure the page - mobile first ***/
+		
+		section.rightcol, section.rightcol article, aside.side-content {
+			box-sizing: border-box;
+			padding:15px;
+		}
+		
+		@media screen and (min-width : 768px) {
+			section.rightcol {
+				width: 65%;
+				float:right;
+			}
+			aside.side-content {
+				width:33%;
+				float:left;
+			}
+			
+		}
+		
+		@media screen and (min-width : 992px) {
+			section.rightcol article {
+				width:48.5%;
+			}
+			section.rightcol article:nth-child(1) {
+				float:left;
+			}
+			section.rightcol article:nth-child(2) {
+				float:right;
+			}
+			
+		}
+		
+	</style>
+</head>
+
+<body>
+	<main>
+		<section class="rightcol">
+			<header>
+				<h1>WELCOME!</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, quae nulla error, sit animi culpa delectus dicta praesentium dolor unde similique. Quibusdam sapiente delectus ut, quasi vero, sint ab aut!</p>
+			</header>
+			<article>
+				<header>
+					<h2>Theme one</h2>
+				</header>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum veniam laudantium quis incidunt quae odio ut, delectus ex doloribus temporibus asperiores beatae error, corporis ducimus animi laboriosam omnis quasi iure!</p>
+				<p>Non itaque quasi quisquam rerum alias in, qui autem aliquid explicabo quo corporis, necessitatibus porro sint cumque fugiat ducimus sequi esse nihil iusto consequuntur temporibus voluptas. Maiores dicta eligendi ab.</p>
+				<footer>
+					Read more about...
+				</footer>
+			</article>
+			   
+			<article>
+				<header>
+					<h2>Theme Two</h2>
+				</header>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum veniam laudantium quis incidunt quae odio ut, delectus ex doloribus temporibus asperiores beatae error, corporis ducimus animi laboriosam omnis quasi iure!</p>
+				<p>Non itaque quasi quisquam rerum alias in, qui autem aliquid explicabo quo corporis, necessitatibus porro sint cumque fugiat ducimus sequi esse nihil iusto consequuntur temporibus voluptas. Maiores dicta eligendi ab.</p>
+				<footer>
+					Read more about...
+				</footer>
+			</article>
+		</section>
+				
+		<aside class="side-content">
+			<div id="realated-content">
+				<h3> Not so important content shouldn go after the most important content</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quia similique saepe velit placeat ullam pariatur corporis, quidem magni eveniet possimus tempore aliquid adipisci animi, aperiam dicta impedit. Repellat, accusamus.</p>
+				<p>Minima id esse quasi quia explicabo voluptate. Molestias reiciendis fugit odit debitis, ducimus commodi cupiditate autem minus eum ratione adipisci aperiam eos animi voluptatum dolores explicabo, harum dolore ex soluta!</p>
+				<p>Assumenda voluptate, fugit ipsam odit quae autem, deserunt consequuntur, quos, itaque aspernatur illum harum aut aliquam facere cum. Excepturi, eum animi quos totam, ut assumenda. Ex tenetur est non porro.</p>
+			</div>
+		</aside>
+	</main>
+					<div id="nextelement">DON'T FORGET TO CLEAR THE NEXT ELEMENT</div>
+</body>
+</html>

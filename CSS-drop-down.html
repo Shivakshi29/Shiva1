@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Simple CSS drop-down navigation</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<style>
+		body {
+	   		font-family:"Tahoma", sans-serif;   
+    	}
+
+    	nav {
+	   		background:#DDD;
+	   		width:100%;
+    	}
+
+		nav > label {
+			display:block;
+			line-height:45px;
+			background:orange;
+			color:#fff;
+			text-align:center;
+		}
+
+		.fas {
+			font-size:2.3em;
+			padding-top:10px;
+		}
+		li > label:after {
+ 			font-family: "Font Awesome 5 Free";
+ 			font-weight: 900; 
+ 			content: " \f0d7";
+		}
+
+		nav  ul {
+			margin:0;
+			padding:0;
+			list-style:none;
+		}
+		nav ul, nav input {
+			display:none;
+		}
+		nav input:checked + ul {
+			display:block;
+		}
+		nav ul label, nav ul li a {
+			display: block;
+			line-height: 45px;
+			color: #000;
+			padding-left: 15px;
+			text-decoration: none;
+			word-wrap: break-word;
+			background:#ddd;
+		}
+		nav a, nav label{
+			border-bottom:1px dotted #FFF;
+		}
+		nav ul label:hover, nav ul li a:hover  {
+			background:#E99100;
+			color:#fff;
+		}
+		li > [id^=toggle]:checked +ul a { /*indenting the nested ul a */
+		text-indent:25px;
+		background:#bbb;
+		}
+		@media only screen and (min-width:960px) {   
+		/* all CSS rules will be added here */
+			nav > label {
+				display:none;
+			}
+
+		 	nav > ul {
+				display:block;
+			}
+
+			nav > ul > li {
+    			display: inline-block;
+    			position: relative;
+			}
+
+			nav > ul > li > ul {
+			 	position:absolute;
+		 	}
+			nav ul label, nav ul li a {
+				padding-left: 0px;
+				width:120px;
+				text-align:center;
+			}	
+			nav > ul > li > ul > li > a {
+				text-indent:0px;
+	     		background:#ddd;
+			}
+
+
+
+		}
+
+
+
+	</style>
+</head>
+
+<body>
+	<header>
+<nav aria-label="Main menu">
+	<label for="toggle"><i class="fas fa-bars"></i></label>
+	<input type="checkbox" id="toggle" aria-haspopup="true">
+	<ul role="menubar">	
+	  <li><a href="#">Link</a></li>
+	  <li>
+		 <label for="toggle_1">SUBMENU 1</label> <input type="checkbox" id="toggle_1" aria-haspopup="true">
+		  <ul role="menu">
+		    <li><a href="#">sub-Link</a></li>
+		    <li><a href="#">sub-Link</a></li>
+		    <li><a href="#">sub-Link</a></li>
+	      </ul>
+	  </li>
+	  <li><a href="#">Link</a></li>
+	  <li>
+		  <label for="toggle_2">SUBMTNU 2</label> <input type="checkbox" id="toggle_2" aria-haspopup="true">
+		   <ul role="menu"> 
+		    <li><a href="#">sub-Link</a></li>
+		    <li><a href="#">sub-Link</a></li>
+		    <li><a href="#">sub-Link</a></li>
+	      </ul>
+		
+		</li>
+	  <li><a href="#">Link</a></li>
+  </ul>
+  </nav>
+	</header>
+	<section>
+		<h2>SECTION</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni velit quam accusamus facere rem, modi aperiam optio, impedit architecto nihil fugiat quaerat libero, adipisci voluptate amet. Provident iste corporis labore!</p>
+		<p>Labore a natus porro quam, temporibus fugiat saepe aspernatur aut, obcaecati provident distinctio. Accusantium laboriosam delectus doloribus explicabo aspernatur quasi tempore atque, cupiditate culpa, a obcaecati officiis repudiandae perferendis? Ipsam.</p>
+		<p>Dolore sunt asperiores itaque, animi. Aliquam saepe repellendus facere nulla placeat reiciendis blanditiis dolorum incidunt vero nemo. Suscipit maiores quasi earum ducimus architecto, odit, ipsam distinctio. Ipsum, cum, dolor. Aperiam.</p>
+	</section>
+</body>
+	
+</html>

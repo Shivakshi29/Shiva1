@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Simple CSS drop-down navigation</title>
+
+<style>
+ul.cards {
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+ul.cards li{
+	background-color:#F4F4F4;
+	margin-bottom:0.5em;
+	box-sizing:border-box;
+	padding:15px;border:2px solid #ddd;
+} 
+
+@media screen and (min-width : 640px ){
+	ul.cards li {
+	    width:48%;
+	    float:left;
+	    margin:1%;
+	}
+    ul.cards li:last-child {
+        background:#E8EDFF;
+        width:98%;  
+	}
+}
+/*@media screen and (min-width : 1024px) {
+	ul.cards li {
+		width:23%;
+	}
+	ul.cards li:nth-child(3) {
+		clear:none;
+	}
+}*/
+@media screen and (min-width : 1024px) {
+	ul.cards li {
+		width:31%;
+        float: left;
+	}
+    ul.cards li:nth-child(4) {
+		clear:left;
+        width:48%;
+		background-color:#E1FFF0;
+	}
+    ul.cards li:nth-child(5) {
+		width:48%;
+		background-color:#E1FFF0;
+	}
+
+}
+
+@media screen and (min-width : 1366px) {
+    ul.cards {
+        max-width:1288px;
+        margin-left:auto; margin-right:auto;
+    }
+    ul.cards li {
+		width:18%;
+		float:left;
+	}
+	ul.cards li:nth-child(4) {
+		clear:none;
+		width:18%;	
+	}
+	ul.cards li:nth-child(5) {
+	    width:18%;
+	}
+
+}
+
+@media screen and (min-width : 1366px) {
+	@media screen and (min-width : 1366px) {	
+       ul.cards {
+			max-width:1288px;
+			margin-left:auto; margin-right:auto;
+		}
+}
+}
+	
+
+
+
+
+</style>
+</head>
+<body>
+    <ul class="cards"><li>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. 
+        </li>
+        <li>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. libero, sit amet commodo magna eros quis urna. libero, sit amet commodo magna eros quis urna.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+        </li>
+        <li>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+        </li>
+        <li>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+        </li>
+    </ul>
+        
+</body>
+</html>

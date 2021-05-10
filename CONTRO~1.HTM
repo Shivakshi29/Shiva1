@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Simple CSS drop-down navigation</title>
+
+<style>
+ul.cards {
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+ul.cards li{
+	background-color:#F4F4F4;
+	margin-bottom:0.5em;
+	box-sizing:border-box;
+	padding:15px;border:2px solid #ddd;
+} 
+
+@media screen and (min-width : 640px ){
+	ul.cards li {
+	    width:48%;
+	    float:left;
+	    margin:1%;
+	}
+    ul.cards li:nth-child(3) {
+	    clear:left;
+	}
+}
+@media screen and (min-width : 1024px) {
+	ul.cards li {
+		width:23%;
+	}
+	ul.cards li:nth-child(3) {
+		clear:none;
+	}
+}
+@media screen and (min-width : 1024px) {
+	ul.cards li {
+		width:31%;
+	}
+    ul.cards li:nth-child(4) {
+		clear:left;
+	}
+}
+
+@media screen and (min-width : 1366px) {
+    ul.cards {
+        max-width:1288px;
+        margin-left:auto; margin-right:auto;
+    }
+}
+
+@media screen and (min-width : 1366px) {
+	@media screen and (min-width : 1366px) {	
+       ul.cards {
+			max-width:1288px;
+			margin-left:auto; margin-right:auto;
+		}
+}
+}
+.video-box{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+.video-box iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.video-box iframe, .video_box embed, video-box object {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+    <ul class="cards"><li>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. 
+        </li>
+        <li>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. libero, sit amet commodo magna eros quis urna. libero, sit amet commodo magna eros quis urna.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+        </li>
+        <li>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+        </li>
+        <li>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+        </li>
+    </ul>
+    <div class="video-box">
+		<iframe src="video/store.mp4">
+		</iframe>
+	</div>   
+</body>
+</html>

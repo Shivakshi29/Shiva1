@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Two column design with multiple articles</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {	
+			font: normal 1em/150% Tahoma, sans-serif;
+			color:rgba(72,72,72,1.00);
+		}
+img {
+			max-width:100%;
+	}
+* {
+			box-sizing:border-box;
+   }
+h1, h2, h3 {
+	text-align: center;
+	font-family: bebas-neue;
+	font-style: normal;
+	font-weight: 400;
+	color:rgba(68,114,170,1.00)
+}
+
+section.articles {
+	background-color:rgba(0,0,0,0.05);
+}
+aside.sidecolumn {
+	background-color: rgba(0,0,0,.1);
+}
+article {
+	background-color: rgba(0,0,0, .05);
+}
+section.articles figure {
+	background:#fff;
+	text-align:center;
+  max-width:500px;
+	margin:auto;
+
+}
+section.articles figcaption {
+	padding:10px 0;
+}
+section.articles article footer {
+	clear: both;
+}
+@media screen and (min-width:640px) {
+section.articles article figure {
+	margin: 0px 15px 15px 0px;
+	float: left;
+	width: 280px;
+}
+}
+@media screen and (min-width : 960px) {
+section.articles {
+	width: 65%;
+	float: left;
+}
+aside.sidecolumn {
+	width: 33%;
+	float: right;
+}
+}
+section.articles article {
+	clear: both;
+	overflow: hidden;
+	margin-bottom:15px;
+}
+section.articles article, aside {
+	padding:15px;
+}
+
+
+
+
+</style>
+</head>
+<script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/bebas-neue:n4:default.js">
+</script>
+
+<body>
+  <main>
+    
+        <h1>Section: Content Heading</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis reiciendis, ea modi fugiat aut? Labore consequatur eius, cumque, soluta inventore ad eaque quaerat, aperiam autem esse neque veritatis qui accusantium!</p>
+      <section class="articles">
+        <h1>Section: Content Heading</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis reiciendis, ea modi fugiat aut? Labore consequatur eius, cumque, soluta inventore ad eaque quaerat, aperiam autem esse neque veritatis qui accusantium!</p>
+     <!-- Add articles elements here -->
+     <article>
+      <header>
+        <h2>Article 1</h2>
+        <p>Published
+        <time datetime="2019-10-05">January, 6, 2018
+        </time>
+        by Gerry Hudson
+        </p>
+     </header>
+    <figure> 
+	    <img src="images/tech.jpg" alt="placeholder">
+        <figcaption> Figure description </figcaption>
+    </figure>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita minus porro sunt ipsam possimus quasi error at illum quis in repellendus ex eos dolorem voluptas quas explicabo, atque dignissimos officiis.</p>
+    <p>Error eius illo consequatur dicta accusantium voluptates, magni fugit dignissimos quia quas iste, dolores ducimus dolore dolorum dolorem exercitationem excepturi incidunt placeat veniam sequi soluta deleniti nulla. Libero, sed, praesentium!</p>
+    <footer>
+      <address>
+        More about author: <a href="http://www.domain.com" target="_blank"> visit www.domain.com</a>
+      </address>
+    </footer>
+    </article>
+    <article>
+      <header>
+        <h2>Article 1</h2>
+        <p>Published
+        <time datetime="2019-10-05">January, 6, 2018
+        </time>
+        by Gerry Hudson
+        </p>
+     </header>
+    <figure> 
+	    <img src="images/tech.jpg" alt="placeholder">
+        <figcaption> Figure description </figcaption>
+    </figure>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita minus porro sunt ipsam possimus quasi error at illum quis in repellendus ex eos dolorem voluptas quas explicabo, atque dignissimos officiis.</p>
+    <p>Error eius illo consequatur dicta accusantium voluptates, magni fugit dignissimos quia quas iste, dolores ducimus dolore dolorum dolorem exercitationem excepturi incidunt placeat veniam sequi soluta deleniti nulla. Libero, sed, praesentium!</p>
+    <footer>
+      <address>
+        More about author: <a href="http://www.domain.com" target="_blank"> visit www.domain.com</a>
+      </address>
+    </footer>
+    </article>
+
+    </section>
+      <aside class="sidecolumn">
+        <h3>Heading for the aside content</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis fuga corporis unde aperiam maiores ab. Natus impedit possimus, tempora, beatae recusandae, ex reprehenderit perferendis quod ipsam assumenda commodi dolores doloribus!</p>
+        <p>Minima ad molestiae, obcaecati esse ipsam fugit iure cum rem tempora, recusandae dolorem dicta quas explicabo, eaque nisi sint, minus sed quidem dolorum aut vero nihil ex. Quaerat, accusamus nobis.</p>
+        <p>Veritatis voluptatum expedita dolores error provident, neque maiores dicta debitis ipsa illum consequuntur eius quaerat fugiat corrupti consequatur suscipit minus, modi et optio, tenetur id sequi, necessitatibus. Unde, nulla, nesciunt.</p>
+      </aside>
+  </main>
+</body>
+</html>

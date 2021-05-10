@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Creating calendar of events</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+body {
+	font-family: 'Trebuchet MS', sans-serif;
+}
+h1, #calendar h2 {
+	text-align: center;
+}
+ul.weekdays {
+display: none;
+}
+#calendar li {
+	border: 1px solid #ededed;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 5px;
+
+	margin-bottom: -1px;
+}
+ul.days h3 {
+	text-align: left;
+	margin: 0;
+	padding: 4px 0px 4px 4px;
+	font-size: 1em;
+	background: #EFEFEF;
+}
+#calendar time {
+	display: block;
+}
+#calendar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+.event {
+	font-size: 0.8em;
+	margin-bottom: 5px;
+}
+
+.other-month {
+	background-color: #FEFFF4;
+}
+@media screen and (min-width : 768px) {
+#calendar li {
+	float: left;
+	width: 14.2857%;
+	margin-right: -1px;
+	
+}
+ul.weekdays {
+	display: block
+}
+ul.weekdays li {
+	border: none!important;
+	color: #fff;
+	background: #333;
+	line-height: 40px;
+	padding: 10px 0px;
+	text-align: center;
+}
+ul.days li {
+	height: 180px;
+}
+ul.days h3 {
+	font-size: 0.9em;
+	text-align: right;
+	padding-right: 4px;
+}
+
+}
+
+</style>
+	</head>
+
+	<body>
+<h1>Calendar of Events</h1>
+<section id="calendar">
+      <header>
+    <h2>January 2018</h2>
+  </header>
+      <div id ="calendar_body">
+    <ul class="weekdays">
+          <li>Sun.</li>
+          <li>Mon.</li>
+          <li>Tue.</li>
+          <li>Wed.</li>
+          <li>Thu.</li>
+          <li>Fri.</li>
+          <li>Sat.</li>
+        </ul>
+    <ul class="days">
+          <li class="day  other-month">
+        <h3>Sun. 31</h3>
+      </li>
+          <li class="day">
+        <h3><span>Mon.</span> 1</h3>
+        <div class="event"> Seminar: HTML5 Demystified
+              <time datetime="2018-01-01T9:30">9:30am</time>
+            </div>
+      </li>
+          <li class="day">
+        <h3>Tue. 2</h3>
+        <div class="event"> Seminar: HTML5 Demystified
+              <time datetime="2018-01-01T9:30">9:30am</time>
+            </div>
+			  <div class="event"> Workshop: Creating responsive calendar
+              <time datetime="2018-01-01T9:30">All day</time>
+            </div>
+      </li>
+          <li class="day">
+        <h3>Wed. 3</h3>
+      </li>
+          <li class="day">
+        <h3>Thu. 4</h3>
+      </li>
+          <li class="day">
+        <h3>Fri. 5</h3>
+        <div class="event"> Seminar: HTML5 Demystified
+              <time datetime="2018-01-01T9:30">9:30am</time>
+            </div>
+        <div class="event"> Workshop: Creating responsive tables
+              <time datetime="2018-01-01T8:30">8:30am</time>
+            </div>
+      </li>
+          <li class="day">
+        <h3>Sat. 6</h3>
+      </li>
+        </ul>
+    <!-- second week -->
+    <ul class="days">
+          <li class="day">
+        <h3>Sun. 7</h3>
+      </li>
+          <li class="day">
+        <h3>Mon. 8</h3>
+        <div class="event"> Seminar: HTML5 Demystified
+              <time datetime="2018-01-01T9:30">9:30am</time>
+            </div>
+      </li>
+          <li class="day">
+        <h3>Tue. 9</h3>
+      </li>
+          <li class="day">
+        <h3>Wed. 10</h3>
+      </li>
+          <li class="day">
+        <h3>Thu. 11</h3>
+        <div class="event"> Seminar: HTML5 Demystified
+              <time datetime="2018-01-01T9:30">9:30am</time>
+            </div>
+      </li>
+          <li class="day">
+        <h3>Fri. 12</h3>
+      </li>
+          <li class="day">
+        <h3>Sat. 13</h3>
+      </li>
+        </ul>
+    <!-- third week -->
+    <ul class="days">
+          <li class="day">
+        <h3>Sun. 14</h3>
+        <div class="event"> Seminar: HTML5 Demystified
+              <time datetime="2018-01-01T9:30">9:30am</time>
+            </div>
+      </li>
+          <li class="day">
+        <h3>Mon. 15</h3>
+      </li>
+          <li class="day">
+        <h3>Tue. 16</h3>
+        <div class="event"> Seminar: HTML5 Demystified
+              <time datetime="2018-01-01T9:30">9:30am</time>
+            </div>
+      </li>
+          <li class="day">
+        <h3>Wed. 17</h3>
+      </li>
+          <li class="day">
+        <h3>Thu. 18</h3>
+        <div class="event"> Seminar: HTML5 Demystified
+              <time datetime="2018-01-01T9:30">9:30am</time>
+            </div>
+      </li>
+          <li class="day">
+        <h3>Fri. 19</h3>
+      </li>
+          <li class="day">
+        <h3>Sat. 20</h3>
+      </li>
+        </ul>
+    <!-- fourth week -->
+    <ul class="days">
+          <li class="day">
+        <h3>Sun. 21</h3>
+        <div class="event"> Seminar: HTML5 Demystified
+              <time datetime="2018-01-01T9:30">9:30am</time>
+            </div>
+      </li>
+          <li class="day">
+        <h3>Mon. 22</h3>
+        <div class="event"> Seminar: HTML5 Demystified
+              <time datetime="2018-01-01T9:30">9:30am</time>
+            </div>
+      </li>
+          <li class="day">
+        <h3>Tue. 23</h3>
+        <div class="event"> Seminar: HTML5 Demystified
+              <time datetime="2018-01-01T9:30">9:30am</time>
+            </div>
+      </li>
+          <li class="day">
+        <h3>Wed. 24</h3>
+      </li>
+          <li class="day">
+        <h3>Thu. 25</h3>
+      </li>
+          <li class="day">
+        <h3>Fri. 26</h3>
+        <div class="event"> Seminar: HTML5 Demystified
+              <time datetime="2018-01-01T9:30">9:30am</time>
+            </div>
+      </li>
+          <li class="day">
+        <h3>Sat. 27</h3>
+      </li>
+        </ul>
+    <!-- fifth week -->
+    <ul class="days">
+          <li class="day">
+        <h3>Sun. 28</h3>
+      </li>
+          <li class="day">
+        <h3>Mon. 29</h3>
+        <div class="event"> Seminar: HTML5 Demystified
+              <time datetime="2018-01-01T9:30">9:30am</time>
+            </div>
+      </li>
+          <li class="day">
+        <h3>Tue. 30</h3>
+      </li>
+          <li class="day">
+        <h3>Wed. 31</h3>
+      </li>
+          <li class="day other-month">
+        <h3>Thu. 1</h3>
+      </li>
+          <li class="day other-month">
+        <h3>Fri. 2</h3>
+        <div class="event"> Seminar: HTML5 Demystified
+              <time datetime="2018-01-01T9:30">9:30am</time>
+            </div>
+      </li>
+          <li class="day other-month">
+        <h3>Sat. 3</h3>
+      </li>
+        </ul>
+  </div>
+    </section>
+		
+
+</body>
+</html>
